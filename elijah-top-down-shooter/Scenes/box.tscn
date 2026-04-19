@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://boflvx7ew2c07"]
+
+[ext_resource type="Texture2D" uid="uid://drkq3m4fis75v" path="res://Assets/wood.jpg" id="1_xkb4e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6ket"]
+size = Vector2(1244, 886.75)
+
+[node name="box" type="StaticBody2D" unique_id=238710618]
+position = Vector2(-4, -13)
+scale = Vector2(0.10048632, 0.12934878)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1956532826]
+position = Vector2(-570.66675, -282.66666)
+scale = Vector2(1.9476563, 2.0886273)
+texture = ExtResource("1_xkb4e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1736688963]
+position = Vector2(-571, -282.37506)
+shape = SubResource("RectangleShape2D_p6ket")

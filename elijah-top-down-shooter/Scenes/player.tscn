@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://vwcpmlx4f5mh"]
+
+[ext_resource type="Script" uid="uid://c7p6mkebcrmyh" path="res://Scripts/player.gd" id="1_v0iea"]
+[ext_resource type="Texture2D" uid="uid://f6fi0pj6wa34" path="res://Assets/ManClear.png" id="2_cvnsp"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6t5aa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vgqql"]
+radius = 459.0
+height = 2030.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1170543372]
+position = Vector2(-14, -29)
+scale = Vector2(0.038488533, 0.039249055)
+script = ExtResource("1_v0iea")
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1082336743]
+position = Vector2(-962.5, -284.9999)
+scale = Vector2(6.7100496, 7.6408567)
+texture = ExtResource("2_cvnsp")
+
+[node name="Gun" type="Sprite2D" parent="Body" unique_id=586484393]
+position = Vector2(0.5833334, 0)
+scale = Vector2(0.50000006, 0.20833333)
+texture = SubResource("PlaceholderTexture2D_6t5aa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=32955550]
+position = Vector2(-1108, 105)
+shape = SubResource("CapsuleShape2D_vgqql")
