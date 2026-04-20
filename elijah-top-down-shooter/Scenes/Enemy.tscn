@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bec6ymkxpkxge"]
+
+[ext_resource type="Texture2D" uid="uid://ccmdniqo67kbv" path="res://Assets/evilManClear.png" id="1_m1htj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m1htj"]
+radius = 6.2243767
+height = 32.228252
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2087543822]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1071129587]
+position = Vector2(-56.295227, -30)
+scale = Vector2(0.22637485, 0.3959461)
+texture = ExtResource("1_m1htj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=692208188]
+position = Vector2(-67, -21.000002)
+scale = Vector2(2.5705385, 2.9166956)
+shape = SubResource("CapsuleShape2D_m1htj")

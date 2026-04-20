@@ -10,12 +10,18 @@
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1485252190]
 position = Vector2(522.2499, 302.74994)
-scale = Vector2(2269.4998, 1260.5)
+scale = Vector2(5179.2915, 2906.2202)
 mesh = SubResource("QuadMesh_y32ns")
 texture = ExtResource("1_a02cp")
 
 [node name="Player" parent="." unique_id=1170543372 instance=ExtResource("1_go701")]
-position = Vector2(198, 395)
+position = Vector2(355, 511)
 
 [node name="box" parent="." unique_id=238710618 instance=ExtResource("2_5a7ea")]
-position = Vector2(757, 486)
+position = Vector2(908, 552)
+
+[node name="box2" parent="." unique_id=2101479781 instance=ExtResource("2_5a7ea")]
+position = Vector2(315, 235)
+
+[node name="box3" parent="." unique_id=1402498480 instance=ExtResource("2_5a7ea")]
+position = Vector2(1131, 198)
