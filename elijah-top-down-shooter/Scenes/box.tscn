@@ -8,6 +8,7 @@ size = Vector2(1244, 886.75)
 [node name="box" type="StaticBody2D" unique_id=238710618]
 position = Vector2(-4, -13)
 scale = Vector2(0.10048632, 0.12934878)
+collision_mask = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1956532826]
 position = Vector2(-570.66675, -282.66666)

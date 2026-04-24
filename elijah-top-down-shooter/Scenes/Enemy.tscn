@@ -6,7 +6,9 @@
 radius = 6.2243767
 height = 32.228252
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2087543822]
+[node name="Enemy" type="CharacterBody2D" unique_id=2087543822]
+collision_layer = 8
+collision_mask = 9
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1071129587]
 position = Vector2(-56.295227, -30)
@@ -17,3 +19,12 @@ texture = ExtResource("1_m1htj")
 position = Vector2(-67, -21.000002)
 scale = Vector2(2.5705385, 2.9166956)
 shape = SubResource("CapsuleShape2D_m1htj")
+
+[node name="PlayerDetector" type="Area2D" parent="." unique_id=411536879]
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayerDetector" unique_id=1104689361]
+position = Vector2(-68.0125, -20.584732)
+scale = Vector2(0.98451835, 1.0022905)
+polygon = PackedVector2Array(-1.0030365, -14.382324, 406.30273, -194.96869, 407.31848, 137.27031, -1.0030365, 12.555971)

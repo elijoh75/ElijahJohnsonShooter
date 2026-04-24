@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bpirci3m0scyp" path="res://Assets/Dirt2.jpg" id="1_a02cp"]
 [ext_resource type="PackedScene" uid="uid://vwcpmlx4f5mh" path="res://Scenes/player.tscn" id="1_go701"]
 [ext_resource type="PackedScene" uid="uid://boflvx7ew2c07" path="res://Scenes/box.tscn" id="2_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://bec6ymkxpkxge" path="res://Scenes/Enemy.tscn" id="4_8j60k"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_y32ns"]
 
@@ -13,6 +14,7 @@ position = Vector2(522.2499, 302.74994)
 scale = Vector2(5179.2915, 2906.2202)
 mesh = SubResource("QuadMesh_y32ns")
 texture = ExtResource("1_a02cp")
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="." unique_id=1170543372 instance=ExtResource("1_go701")]
 position = Vector2(355, 511)
@@ -25,3 +27,15 @@ position = Vector2(315, 235)
 
 [node name="box3" parent="." unique_id=1402498480 instance=ExtResource("2_5a7ea")]
 position = Vector2(1131, 198)
+
+[node name="box4" parent="." unique_id=233452601 instance=ExtResource("2_5a7ea")]
+position = Vector2(-568, 962)
+
+[node name="box5" parent="." unique_id=1164495610 instance=ExtResource("2_5a7ea")]
+position = Vector2(681, 1139)
+
+[node name="box6" parent="." unique_id=941398012 instance=ExtResource("2_5a7ea")]
+position = Vector2(-532, 219)
+
+[node name="Enemy" parent="." unique_id=2087543822 instance=ExtResource("4_8j60k")]
+position = Vector2(-205, 557)
