@@ -17,7 +17,7 @@ height = 1834.4391
 position = Vector2(6.000001, -22)
 scale = Vector2(0.038488533, 0.039249055)
 collision_layer = 2
-collision_mask = 25
+collision_mask = 17
 script = ExtResource("1_v0iea")
 
 [node name="Body" type="Sprite2D" parent="." unique_id=1082336743]
@@ -31,7 +31,7 @@ scale = Vector2(0.50000006, 0.20833333)
 texture = SubResource("PlaceholderTexture2D_6t5aa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=32955550]
-position = Vector2(9.215942, 28.565033)
+position = Vector2(-94.711296, 105)
 shape = SubResource("CapsuleShape2D_vgqql")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1141855836]
@@ -43,7 +43,10 @@ collision_layer = 4
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=344406211]
-position = Vector2(2.670288e-05, -1.5258789e-05)
+position = Vector2(-103.927216, 76.43495)
 shape = SubResource("CapsuleShape2D_cvnsp")
+
+[node name="CameraRemoteTransform2D" type="RemoteTransform2D" parent="." unique_id=1137586455]
+position = Vector2(0.00012207031, 25.478333)
 
 [connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
