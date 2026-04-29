@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 signal died
 
-@onready var camera_remote_transform = $CameraRemoteTransform
+@onready var camera_remote_transform = $CameraRemoteTransform2D
 
 var speed = 300.0
 
