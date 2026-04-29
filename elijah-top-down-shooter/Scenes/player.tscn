@@ -6,12 +6,12 @@
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6t5aa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vgqql"]
-radius = 459.0
-height = 2030.0
+radius = 952.10956
+height = 2008.1462
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cvnsp"]
-radius = 389.72656
-height = 1834.4391
+radius = 883.38007
+height = 1885.3958
 
 [node name="Player" type="CharacterBody2D" unique_id=1170543372]
 position = Vector2(6.000001, -22)
