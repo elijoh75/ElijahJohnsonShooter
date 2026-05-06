@@ -7,6 +7,43 @@
 radius = 15.171919
 height = 35.79017
 
+[sub_resource type="Animation" id="Animation_wovta"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xeo28"]
+resource_name = "take_damage"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kpr8r"]
+_data = {
+&"RESET": SubResource("Animation_wovta"),
+&"take_damage": SubResource("Animation_xeo28")
+}
+
 [node name="Enemy" type="CharacterBody2D" unique_id=2087543822]
 collision_layer = 8
 collision_mask = 9
@@ -31,6 +68,9 @@ collision_mask = 2
 position = Vector2(0, 1.000001)
 scale = Vector2(0.98451835, 1.0022905)
 polygon = PackedVector2Array(-1.0030365, -51.297768, 406.30273, -194.96869, 407.31848, 137.27031, 0.0126953125, 51.466843)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=105262291]
+libraries/ = SubResource("AnimationLibrary_kpr8r")
 
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]
 [connection signal="body_exited" from="PlayerDetector" to="." method="_on_player_detector_body_exited"]

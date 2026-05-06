@@ -2,16 +2,15 @@
 
 [ext_resource type="Script" uid="uid://c7p6mkebcrmyh" path="res://Scripts/player.gd" id="1_v0iea"]
 [ext_resource type="Texture2D" uid="uid://f6fi0pj6wa34" path="res://Assets/ManClear.png" id="2_cvnsp"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://d0elwb02u51ji" path="res://Assets/WeaponClear.png" id="3_6t5aa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vgqql"]
 radius = 952.10956
 height = 2008.1462
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cvnsp"]
-radius = 883.38007
-height = 1885.3958
+radius = 831.4165
+height = 1732.5259
 
 [node name="Player" type="CharacterBody2D" unique_id=1170543372]
 position = Vector2(6.000001, -22)
@@ -26,9 +25,10 @@ scale = Vector2(6.7100496, 7.6408567)
 texture = ExtResource("2_cvnsp")
 
 [node name="Gun" type="Sprite2D" parent="Body" unique_id=586484393]
-position = Vector2(0.5833334, 0)
-scale = Vector2(0.50000006, 0.20833333)
-texture = SubResource("PlaceholderTexture2D_6t5aa")
+position = Vector2(151.01062, 63.355206)
+rotation = -3.1371086
+scale = Vector2(0.2866603, -0.18148123)
+texture = ExtResource("3_6t5aa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=32955550]
 position = Vector2(-94.711296, 105)
@@ -48,5 +48,12 @@ shape = SubResource("CapsuleShape2D_cvnsp")
 
 [node name="CameraRemoteTransform2D" type="RemoteTransform2D" parent="." unique_id=1137586455]
 position = Vector2(0.00012207031, 25.478333)
+
+[node name="ShootRaycast" type="RayCast2D" parent="." unique_id=423510499]
+position = Vector2(1662.8331, -25.478296)
+scale = Vector2(58.82691, 39.12617)
+target_position = Vector2(1000, 0)
+collision_mask = 9
+collide_with_areas = true
 
 [connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
