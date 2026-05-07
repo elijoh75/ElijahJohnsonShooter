@@ -22,6 +22,7 @@ func _process(delta: float) -> void:
 			if collider is StaticBody2D:
 				print("shot a box")
 			elif collider is Enemy:
+				collider.player = self
 				collider.take_damage(1)
 				
 

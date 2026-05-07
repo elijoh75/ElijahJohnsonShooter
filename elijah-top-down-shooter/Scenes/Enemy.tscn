@@ -24,7 +24,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_xeo28"]
 resource_name = "take_damage"
-length = 0.3
+length = 0.16666667
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -32,7 +32,7 @@ tracks/0/path = NodePath("Sprite2D:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
+"times": PackedFloat32Array(0, 0.16666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
@@ -67,7 +67,7 @@ collision_mask = 2
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayerDetector" unique_id=1104689361]
 position = Vector2(0, 1.000001)
 scale = Vector2(0.98451835, 1.0022905)
-polygon = PackedVector2Array(-1.0030365, -51.297768, 406.30273, -194.96869, 407.31848, 137.27031, 0.0126953125, 51.466843)
+polygon = PackedVector2Array(-1.0030365, -51.297768, 492.6267, -228.64594, 487.5481, 142.50394, 0.0126953125, 51.466843)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=105262291]
 libraries/ = SubResource("AnimationLibrary_kpr8r")

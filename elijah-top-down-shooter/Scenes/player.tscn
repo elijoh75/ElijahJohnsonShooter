@@ -19,6 +19,12 @@ collision_layer = 2
 collision_mask = 17
 script = ExtResource("1_v0iea")
 
+[node name="Line2D" type="Line2D" parent="." unique_id=1063801303]
+points = PackedVector2Array(15000, -25, 1650, -25)
+width = 50.0
+default_color = Color(1, 0, 0, 0.53333336)
+begin_cap_mode = 2
+
 [node name="Body" type="Sprite2D" parent="." unique_id=1082336743]
 position = Vector2(-51.963547, -280.2615)
 scale = Vector2(6.7100496, 7.6408567)
