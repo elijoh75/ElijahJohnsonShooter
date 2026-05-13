@@ -5,16 +5,20 @@ signal died
 
 @onready var camera_remote_transform = $CameraRemoteTransform2D
 @onready var shoot_raycast = $ShootRaycast
-
+@onready var laser_line = $LaserLine2D
 
 var speed = 300.0
 
 func _process(delta: float) -> void:
 	look_at(get_global_mouse_position())
-
+	
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
-
+	
+	
+	
+	
+	
 	if Input.is_action_just_pressed("shoot"):
 		if shoot_raycast.is_colliding():
 			var collider = shoot_raycast.get_collider()
