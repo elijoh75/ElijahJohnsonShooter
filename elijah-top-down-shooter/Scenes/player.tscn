@@ -20,6 +20,8 @@ collision_mask = 17
 script = ExtResource("1_v0iea")
 
 [node name="LaserLine2D" type="Line2D" parent="." unique_id=1063801303]
+position = Vector2(205.10796, 0)
+scale = Vector2(0.87180734, 1)
 points = PackedVector2Array(17000, -25, 1650, -25)
 width = 50.0
 default_color = Color(1, 0, 0, 0.53333336)
