@@ -56,4 +56,4 @@ position = Vector2(1848, -253)
 position = Vector2(1812, 1286)
 
 [node name="Spawner3" parent="." unique_id=288388923 instance=ExtResource("6_5ukr8")]
-position = Vector2(-1747, 1142)
+position = Vector2(-1374, 1148)
