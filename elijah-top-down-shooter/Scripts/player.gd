@@ -7,7 +7,7 @@ signal died
 @onready var shoot_raycast = $ShootRaycast
 @onready var laser_line = $LaserLine2D
 
-var speed = 300.0
+var speed = 400.0
 
 func _process(delta: float) -> void:
 	look_at(get_global_mouse_position())

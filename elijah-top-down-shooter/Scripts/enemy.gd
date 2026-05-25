@@ -5,7 +5,7 @@ class_name Enemy
 
 var player: Player = null
 
-var speed: float = 500.0
+var speed: float = 350.0
 var direction := Vector2.ZERO
 
 var hit_points: int = 3

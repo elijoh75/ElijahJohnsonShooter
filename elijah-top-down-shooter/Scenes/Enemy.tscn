@@ -7,6 +7,9 @@
 radius = 15.171919
 height = 35.79017
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_wovta"]
+radius = 3703.553
+
 [sub_resource type="Animation" id="Animation_wovta"]
 length = 0.001
 tracks/0/type = "value"
@@ -64,10 +67,10 @@ position = Vector2(-1.0000076, 0.16964722)
 collision_layer = 16
 collision_mask = 2
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayerDetector" unique_id=1104689361]
-position = Vector2(0, 1.000001)
-scale = Vector2(0.98451835, 1.0022905)
-polygon = PackedVector2Array(-1.0030365, -51.297768, 492.6267, -228.64594, 487.5481, 142.50394, 0.0126953125, 51.466843)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerDetector" unique_id=180122095]
+position = Vector2(1.0000076, -0.16964722)
+shape = SubResource("CircleShape2D_wovta")
+debug_color = Color(0.7670247, 2.5268644e-06, 9.62615e-07, 0.41960785)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=105262291]
 libraries/ = SubResource("AnimationLibrary_kpr8r")
