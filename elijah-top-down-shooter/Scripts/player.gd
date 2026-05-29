@@ -6,6 +6,8 @@ signal died
 @onready var camera_remote_transform = $CameraRemoteTransform2D
 @onready var shoot_raycast = $ShootRaycast
 @onready var laser_line = $LaserLine2D
+@onready var shoot_sound = $ShootSound
+
 
 var speed = 400.0
 
@@ -20,6 +22,7 @@ func _process(delta: float) -> void:
 	
 	
 	if Input.is_action_just_pressed("shoot"):
+		shoot_sound.play()
 		if shoot_raycast.is_colliding():
 			var collider = shoot_raycast.get_collider()
 			

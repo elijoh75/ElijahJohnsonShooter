@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ccmdniqo67kbv" path="res://Assets/evilManClear.png" id="1_m1htj"]
 [ext_resource type="Script" uid="uid://cpbhy5l6hfm1i" path="res://Scripts/enemy.gd" id="1_wovta"]
+[ext_resource type="AudioStream" uid="uid://26e6ofw52yrj" path="res://Assets/EnemyHurtAudio.mp3" id="3_xeo28"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m1htj"]
 radius = 15.171919
@@ -74,6 +75,9 @@ debug_color = Color(0.7670247, 2.5268644e-06, 9.62615e-07, 0.41960785)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=105262291]
 libraries/ = SubResource("AnimationLibrary_kpr8r")
+
+[node name="EnemyHurt" type="AudioStreamPlayer2D" parent="." unique_id=1801664050]
+stream = ExtResource("3_xeo28")
 
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]
 [connection signal="body_exited" from="PlayerDetector" to="." method="_on_player_detector_body_exited"]

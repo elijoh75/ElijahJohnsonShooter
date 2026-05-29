@@ -2,6 +2,7 @@ extends CharacterBody2D
 class_name Enemy
 
 @onready var animplayer = $AnimationPlayer
+@onready var enemy_hurt = $EnemyHurt
 
 var player: Player = null
 
@@ -47,7 +48,7 @@ func _on_player_detector_body_exited(body: Node2D) -> void:
 func take_damage(amount: int):
 	if amount > 0:
 		hit_points -= amount
-		
+		enemy_hurt.play()
 		animplayer.play("take_damage")
 		if hit_points <= 0:
 			print("enemy died")

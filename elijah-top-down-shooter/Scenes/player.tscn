@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c7p6mkebcrmyh" path="res://Scripts/player.gd" id="1_v0iea"]
 [ext_resource type="Texture2D" uid="uid://f6fi0pj6wa34" path="res://Assets/ManClear.png" id="2_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://d0elwb02u51ji" path="res://Assets/WeaponClear.png" id="3_6t5aa"]
+[ext_resource type="AudioStream" uid="uid://dskoj1go04wqt" path="res://Assets/freesound_community-single-pistol-gunshot-3-101923.mp3" id="4_vgqql"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vgqql"]
 radius = 952.10956
@@ -63,5 +64,9 @@ scale = Vector2(58.82691, 39.12617)
 target_position = Vector2(1000, 0)
 collision_mask = 9
 collide_with_areas = true
+
+[node name="ShootSound" type="AudioStreamPlayer2D" parent="." unique_id=1812529315]
+stream = ExtResource("4_vgqql")
+volume_db = -3.649
 
 [connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
