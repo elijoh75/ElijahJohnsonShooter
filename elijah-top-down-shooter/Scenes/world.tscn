@@ -47,7 +47,6 @@ position = Vector2(-444, 71)
 [node name="Enemies" type="Node" parent="." unique_id=1194272790]
 
 [node name="Enemy" parent="Enemies" unique_id=2087543822 instance=ExtResource("4_8j60k")]
-visible = false
 position = Vector2(-1056, -232)
 
 [node name="Spawner" parent="." unique_id=1082228675 instance=ExtResource("6_5ukr8")]
